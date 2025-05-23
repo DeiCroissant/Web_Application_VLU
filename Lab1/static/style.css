@@ -1,0 +1,65 @@
+.ex1 {
+    padding-left: 1.5em;
+    margin: 20px;
+    font-weight: 200px;
+    font-size: 20px;
+    color: black;
+}
+.dot li::marker{
+    list-style-type: disc;
+    list-style-position: outside;
+    color: black;
+}
+.container {
+    margin: 20px;
+    font-weight: 200px;
+    font-size: 20px;
+    color: black;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: green; 
+}
+
+.ex2 {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.student-page {
+    padding: 2rem;
+    background: white;
+}
+.student-page h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.student-page .student-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-page .student-form button {
+    width: 100%;
+    padding: 0.5rem;
+    background: #0066cc;
+    border: none;
+    border-radius: 4px;
+
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="student-page">
+    <h1>Manh Ha Information form</h1>
+    <form action="#" method="post" class="student-form">
+        <lable for="username"> Username:</lable><br>
+        <input type="text" id="username" name="username"/><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"/><br><br>
+
+        Gender:<br>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Female</label><br><br>
+        <input type="radio" id="other" name="gender" value="other"/>
+        <label for="other">Other</label><br><br>
+        
+        <label for="membership">Membership Level:</label><br>
+        <input list="Options" id="membership" name="membership"/>
+        <datalist id="Options">
+            <option value="Thành viên Bạc"></option>
+            <option value="Thành viên Vàng"></option>
+            <option value="Thành viên Kim cương"></option>
+        </datalist><br><br>
+
+        <label for="favorcolor">Choose your favorite color:</label><br>
+        <input type="color" id="favorcolor" name="favorcolor"/><br><br>
+
+        <input type="checkbox" id="correct" name="correct" value="correct"/>
+        <label for="correct">Correct</label><br><br>
+        <input type="submit" value="Submit" />
+
+    </form>
+    </div>
+    
+</body>
+</html>
