@@ -1,0 +1,12 @@
+.friend-info2 {
+    color: yellow;
+    background-color: blue;
+}
+
+.friend-info {
+    color: yellow;
+    background-image: url(Cat.jpg); 
+    background-size: contain;
+    background-position: center;
+    
+}
