@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="./assets/lab3.css">
+  </head>
+  <body>
+    <div class="register-container">
+        <h1 class="register-form">REGISTER ACCOUNT</h1>
+        <form id="registrationForm" method="POST">
+            <div class="form1">
+                <label for="username">Enter Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    minlength="6"
+                    maxlength="15"
+                    placeholder="Spongebob123"
+                    required
+                />
+            </div>
+
+            <div class="form1">
+                <label for="password">Enter Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="6"
+                    maxlength="20"
+                    placeholder="Password123"
+                    required
+                />
+            </div>
+
+            <div class="form1">
+                <label for="email">Enter email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="abc@gmail.com"
+                    required
+                />
+            </div>
+
+            <div class="form-row">
+                <div class="dob-form">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="gender-form">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="hobbies-section">
+                <label>Hobbies</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="movies" name="hobbies" value="Watching Movies" />
+                    <label for="movies">Watching Movies</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="music" name="hobbies" value="Listening to Music" />
+                    <label for="music">Listening to Music</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading Books" />
+                    <label for="reading">Reading Books</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="traveling" name="hobbies" value="Traveling" />
+                    <label for="traveling">Traveling</label>
+                </div>
+            </div>
+
+            <div class="form-intro">
+                <label for="introduction">Introduce Yourself</label>
+                <textarea
+                    id="introduction"
+                    name="introduction"
+                    placeholder="Tell us about yourself..."
+                ></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-cancel" >Cancel</button>
+                <button type="submit" class="btn btn-register">Register</button>
+            </div>
+        </form>
+    </div>
+
+  </body>
+</html>

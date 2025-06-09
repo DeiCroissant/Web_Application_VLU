@@ -1,0 +1,187 @@
+body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .register-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-form {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+            letter-spacing: 2px;
+        }
+
+        .form1 {
+            margin-bottom: 20px;
+        }
+
+        .form1 label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form1 input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form1 input:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .dob-form, .gender-form {
+            flex: 1;
+        }
+
+        .dob-form label, .gender-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .dob-form input, .gender-form select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .dob-form input:focus, .gender-form select:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .gender-form select {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .hobbies-section {
+            margin-bottom: 20px;
+        }
+
+        .hobbies-section > label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 10px;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+        }
+
+        .checkbox-item label {
+            margin: 0 !important;
+            font-weight: normal !important;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .form-intro {
+            margin-bottom: 20px;
+        }
+
+        .form-intro label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form-intro textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 100px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-intro textarea:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            min-width: 100px;
+            cursor: pointer;
+        }
+
+        .btn-cancel {
+            background-color: #6c7b7f;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background-color: #5a6569;
+        }
+
+        .btn-register {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        .btn-register:hover {
+            background-color: #357abd;
+        }

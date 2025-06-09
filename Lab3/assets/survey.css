@@ -1,0 +1,131 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.survey-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+  width: 500px;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+#survey-form {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.gender-title {
+  user-select: none;
+  text-align: left;
+  font-size: 22px;
+  color: #333;
+}
+
+.radio-group {
+  user-select: none;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.topics-section {
+  user-select: none;
+  margin-top: 20px;
+}
+
+.title {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+  user-select: none;
+}
+
+.form-checkbox {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.form-checkbox label {
+  user-select: none;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 60px;
+  border: none;
+  border-radius: 4px;
+  min-width: 100px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #6c7b7f;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #5a6569;
+}
+
+.btn-submit {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #357abd;
+}
+
+.header {
+    text-align: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}

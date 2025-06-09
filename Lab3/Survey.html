@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/survey.css">
+
+</head>
+<body>
+    <div class="survey-container">
+        <h1 class="header">FEEDBACK SURVEY FORM</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Username:</label>
+                <input type="text" id="name" placeholder="Enter your username" required>
+            </div>
+
+            <div class="gender-title">
+                <label for="gender">Gender:</label>
+            </div>
+
+            <div class="radio-group">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+            </div>
+
+            <div class="topics-section">
+                <label class="title" for="topics">Topics you often care about on the Internet:</label>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="news" value="News">
+                    <label for="news">News</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="entertain" value="Entertainment">
+                    <label for="entertain">Entertainment</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="learn" value="Learning Corner">
+                    <label for="learn">Learning Corner</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="edu" value="Education">
+                    <label for="edu">Education</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="others" value="Other Topics">
+                    <label for="others">Other Topics</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="button" value="Cancel" class="btn btn-cancel">
+                <input type="submit" value="Submit" class="btn btn-submit">
+            </div>
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>
