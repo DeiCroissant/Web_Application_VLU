@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: 2px solid #000;
+    border-radius: 999px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease .25s;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+#hremove {
+    text-decoration: none;;
+}
+
+.post-item .title {
+    color: red;
+    font-size: 28px;
+}
+
+h1#heading.title-group {
+    color: #333;
+}
+
