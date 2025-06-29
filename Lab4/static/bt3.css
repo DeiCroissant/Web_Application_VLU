@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 800px;
+    display: flex;
+    background-color: #111;
+    padding: 20px;
+}
+
+.about {
+    width: 60%;
+    margin-right: 20px;
+}
+
+h2 {
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+}
+p{
+    color: #666;
+}
+
+.links {
+    width: 40%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
