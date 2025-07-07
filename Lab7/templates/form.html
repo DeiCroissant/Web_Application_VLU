@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ student and "Sua" or "Them" }} sinh vien</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1> {{ student and "SUA" or "THEM" }} SINH VIEN</h1>
+    <form method="POST">
+        <label>Ten: <input name="name" type="text" value="{{ student.name if student else '' }}"></label><br>
+        <label>Tuoi: <input name="age" type="text" value="{{ student.age if student else ''}}"></label><br>
+        <label>Nganh: <input type="major" type="text" value="student.major if student else ''"></label><br>
+        <button type="submit">Luu</button>
+    </form>
+</body>
+</html>
