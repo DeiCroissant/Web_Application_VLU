@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ student and "Sua" or "Them" }} sinh vien</title>
+    <title>Document</title>
+    <title>{{ student and "Sua" or "Them" }} Sinh Viên</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1> {{ student and "SUA" or "THEM" }} SINH VIEN</h1>
+    <h1>{{ student and "SỬA" or "THÊM" }} SINH VIÊN</h1>
     <form method="POST">
-        <label>Ten: <input name="name" type="text" value="{{ student.name if student else '' }}"></label><br>
-        <label>Tuoi: <input name="age" type="text" value="{{ student.age if student else ''}}"></label><br>
-        <label>Nganh: <input type="major" type="text" value="student.major if student else ''"></label><br>
-        <button type="submit">Luu</button>
+        <label>
+            Tên: <input name="name" type="text" value="{{ student.name if student else '' }}">
+        </label><br>
+        <label>
+            Tuổi: <input name="age" type="text" value="{{ student.age if student else '' }}">
+        </label><br>
+        <label>
+            Ngành: <input name="major" type="text" value="{{ student.major if student else '' }}">
+        </label><br>
+        <button type="submit">Lưu</button>
     </form>
+    <a href="/">Quay lại danh sách</a>
 </body>
 </html>

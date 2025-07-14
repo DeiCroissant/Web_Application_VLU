@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Ex9-2.css') }}">
+    
+</head>
+<body>
+    <h1>Student List</h1>
+    <a href="/add_student">Add New Student</a>
+    <a href="/excellent_students">Show Excellent Students</a>
+    <a href="/top_student">Show Top Student</a>
+
+    <!-- Exact Name Search -->
+    <form method="GET">
+        <input type="text" name="name" placeholder="Enter exact name">
+        <button type="submit">Search by Name</button>
+    </form>
+
+    <!-- Fuzzy Search -->
+    <form method="GET" action="/fuzzy_search">
+        <input type="text" name="name" placeholder="Enter name for fuzzy search">
+        <button type="submit">Fuzzy Search</button>
+    </form>
+
+    <!-- Filter by Major -->
+    <form method="GET">
+        <select name="major">
+            <option value="">All Majors</option>
+            {% for major in majors %}
+            <option value="{{ major }}">{{ major }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Filter by Major</button>
+    </form>
+
+    <!-- Filter by Age -->
+    <form method="GET" action="/filter_by_age">
+        <label for="min_age">Min Age:</label>
+        <input type="number" id="min_age" name="min_age">
+        <label for="max_age">Max Age:</label>
+        <input type="number" id="max_age" name="max_age">
+        <button type="submit">Filter by Age</button>
+    </form>
+
+    <!-- Filter by Gender -->
+    <form method="GET" action="/filter_by_gender">
+        <select name="gender">
+            <option value="">All Genders</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <button type="submit">Filter by Gender</button>
+    </form>
+
+    <!-- Student List -->
+    <ul>
+        {% for student in students %}
+        <li>
+            {{ student.name }} - Age: {{ student.age }} - Gender: {{ student.gender }} - Major: {{ student.major }} 
+            - Scores: Math: {{ student.math }}, Literature: {{ student.literature }}, English: {{ student.english }}
+            - GPA: {{ '%.2f' % student.gpa }} - Rank: {{ student.rank }}
+            <a href="/edit_student/{{ student._id }}">Edit</a>
+            <a href="/delete_student/{{ student._id }}" onclick="return confirm('Are you sure?')">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Students per Major -->
+    <h2>Students per Major</h2>
+    <ul>
+        {% for count in counts %}
+        <li>{{ count._id }}: {{ count.count }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

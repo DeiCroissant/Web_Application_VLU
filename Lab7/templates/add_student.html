@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Thêm Sinh Viên</title>
+         <link rel="stylesheet" href="{{ url_for('static', filename='Ex9-2.css') }}">
+   </head>
+   <body>
+       <h1>Thêm Sinh Viên Mới</h1>
+       <form method="POST" action="{{ url_for('add_student') }}">
+           <label for="name">Họ Tên:</label>
+           <input type="text" name="name" required><br>
+           <label for="age">Tuổi:</label>
+           <input type="number" name="age" required><br>
+           <label for="gender">Giới Tính:</label>
+           <input type="text" name="gender" required><br>
+           <label for="major">Chuyên Ngành:</label>
+           <input type="text" name="major" required><br>
+           <label for="math">Điểm Toán:</label>
+           <input type="number" name="math" required><br>
+           <label for="literature">Điểm Văn:</label>
+           <input type="number" name="literature" required><br>
+           <label for="english">Điểm Anh:</label>
+           <input type="number" name="english" required><br>
+           <button type="submit">Thêm Sinh Viên</button>
+       </form>
+   </body>
+   </html>

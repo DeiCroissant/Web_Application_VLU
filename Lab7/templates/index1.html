@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+     <h1>DANH SÁCH SINH VIÊN</h1>
+    <a href="/add">Thêm Sinh Viên</a>
+    <hr>
+    <ol>
+        {% for s in students %}
+        <li class="student-item">
+            <span class="student-info">
+                {{ loop.index }}. {{ s.name }} – {{ s.age }} tuoi – {{ s.major }}
+            </span>
+            <div class="actions">
+                <a href="/edit/{{ s._id }}"><button class="edit-btn">Sửa</button></a>
+                <a href="/delete/{{ s._id }}"><button class="delete-btn">Xóa</button></a>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>

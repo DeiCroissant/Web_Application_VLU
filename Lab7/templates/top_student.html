@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Ex9-2.css') }}">
+</head>
+<body>
+    <h1>Top Student</h1>
+    {% if student %}
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>GPA:</strong> {{ "%.2f" % student.gpa }}</p>
+        <p><strong>Rank:</strong> {{ student.rank }}</p>
+    {% else %}
+        <p>No students found.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to Student List</a>
+    <p><strong>Age:</strong> {{ student.age }}</p>
+    <p><strong>Gender:</strong> {{ student.gender }}</p>
+    <p><strong>Major:</strong> {{ student.major }}</p>
+    <p><strong>Math Score:</strong> {{ student.math }}</p>
+    <p><strong>Literature Score:</strong> {{ student.literature }}</p>
+    <p><strong>English Score:</strong> {{ student.english }}</p>
+</body>
+</html>

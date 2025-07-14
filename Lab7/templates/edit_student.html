@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Chỉnh Sửa Sinh Viên</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='Ex9-2.css') }}">
+   </head>
+   <body>
+       <h1>Chỉnh Sửa Thông Tin Sinh Viên</h1>
+       <form method="POST" action="{{ url_for('edit_student', id=student['_id']) }}">
+           <label for="name">Họ Tên:</label>
+           <input type="text" name="name" value="{{ student['name'] }}" required><br>
+           <label for="age">Tuổi:</label>
+           <input type="number" name="age" value="{{ student['age'] }}" required><br>
+           <label for="gender">Giới Tính:</label>
+           <input type="text" name="gender" value="{{ student['gender'] }}" required><br>
+           <label for="major">Chuyên Ngành:</label>
+           <input type="text" name="major" value="{{ student['major'] }}" required><br>
+           <label for="math">Điểm Toán:</label>
+           <input type="number" name="math" value="{{ student['math'] }}" required><br>
+           <label for="literature">Điểm Văn:</label>
+           <input type="number" name="literature" value="{{ student['literature'] }}" required><br>
+           <label for="english">Điểm Anh:</label>
+           <input type="number" name="english" value="{{ student['english'] }}" required><br>
+           <button type="submit">Lưu Thay Đổi</button>
+       </form>
+   </body>
+   </html>
