@@ -9,6 +9,7 @@ This lab introduces Bootstrap 5, a popular CSS framework for building responsive
 - Setting up Bootstrap in your project
 - Understanding the Bootstrap CDN
 - Basic Bootstrap components (alerts, buttons)
+-Ofc with jumpbotron
 
 ### Exercise 2: Grid System
 - Understanding the 12-column grid system
@@ -63,32 +64,18 @@ This lab introduces Bootstrap 5, a popular CSS framework for building responsive
 - Pricing tables
 - Contact forms
 
-## Learning Objectives
-- Understand CSS frameworks and their benefits
-- Master Bootstrap's grid system
-- Use Bootstrap components effectively
-- Create responsive designs
-- Build professional-looking websites quickly
 
-## Prerequisites
-- Basic HTML knowledge
-- Basic CSS understanding
-- Text editor
-- Web browser
+
+
 
 ## Getting Started
 1. Open `index.html` in your browser
 2. Click on each exercise to view examples
-3. Study the code to understand how Bootstrap works
-4. Try modifying the examples to practice
+
 
 ## Resources
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Bootstrap Examples](https://getbootstrap.com/docs/5.3/examples/)
 
-## Tips
-- Always include the viewport meta tag for responsive design
-- Use Bootstrap's utility classes instead of writing custom CSS when possible
-- Test your designs on different screen sizes
-- Refer to the documentation for component options and variations 
+
