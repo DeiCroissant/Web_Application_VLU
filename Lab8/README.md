@@ -96,7 +96,8 @@ This lab introduces Bootstrap 5, a popular CSS framework for building responsive
 <img width="1888" height="876" alt="image" src="https://github.com/user-attachments/assets/3e5c7df9-fd50-4569-b0da-bba4b092d107" />
 <img width="1763" height="704" alt="image" src="https://github.com/user-attachments/assets/0818df93-24e1-43e5-888f-fbfd60a55ce9" />
 <img width="1907" height="864" alt="image" src="https://github.com/user-attachments/assets/af0392e8-696c-4679-b49c-199c1c41043e" />
-<img width="1736" height="792" alt="image" src="https://github.com/user-attachments/assets/4f8e587c-6b9d-446e-add2-77605820b0de" />
+<img width="1744" height="715" alt="image" src="https://github.com/user-attachments/assets/ace6e793-4bc7-46c2-af7b-e8b3571e829b" />
+
 
 
 
